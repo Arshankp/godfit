@@ -17,21 +17,6 @@ A free English-language, mobile-first fitness PWA.
 - Records use localStorage per browser/device; no automatic sync.
 - A hosting service is needed before installing on iPhone as an app; opening index.html via file:// won't enable service worker installation.
 
-## Free deployment with GitHub Pages
-1. Create a new public GitHub repository called `godfit`.
-2. Upload the contents of this folder to the repository root (not inside another nested folder).
-3. In repository Settings → Pages → Build and deployment, select 'Deploy from a branch', `main`, `/ (root)` and save.
-4. Open `https://YOUR_USERNAME.github.io/godfit/` in Safari on the iPhone.
-5. Share → Add to Home Screen → Add.
-
-GitHub Pages repositories are public on GitHub Free: don't upload personal workout backups, credentials or API keys. The app's tracked data stays on the browser device; it is NOT put into your public GitHub repository.
-
-## Custom workout JSON schema
-```json
-{"name":"My Gym Plan","days":[{"id":"A","name":"Full Body A","focus":"Strength","exercises":[["leg_press",3,12,90],["chest_press",3,10,90]]}]}
-```
-Each tuple: [exerciseId, sets, reps_or_seconds, restSeconds]. Known IDs appear in the Coach prompt within the app. Import is validated before saving.
-
 ## GodFit v1.1 update (warm-ups, cool-downs, experimental watch alerts)
 
 - The Plan screen now shows a day-specific warm-up and cool-down for Full Body A, B and C.
