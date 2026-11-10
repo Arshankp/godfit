@@ -25,10 +25,6 @@ A free English-language, mobile-first fitness PWA.
 - The rest alert may appear on a paired Apple Watch when the iPhone is locked; this is **not** an Apple Watch app or a reliable background countdown. iOS can suspend the web app while backgrounded.
 - Current workout data uses the same `godfit_v1` local storage key and is retained by the update. **Export a backup before updating.**
 
-### Upgrade GitHub Pages
-
-Upload the new `index.html` and `sw.js` files to the root of the existing `godfit` repository, replacing those two files and committing the changes. The service worker cache version is bumped to `godfit-v1.1.0`. Reopen/relaunch the Home Screen app, and if needed fully close and reopen it to activate the updated service worker.
-
 ### Additional Apple Watch facts
 
 A dedicated watchOS UI (live set count, countdown, and completing a set on the watch) needs a native watchOS companion built with Xcode. Apple's free Personal Team allows limited on-device testing but provisioning profiles expire after 7 days; it does not provide an independently maintained no-cost public app deployment path.
