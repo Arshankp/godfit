@@ -28,3 +28,10 @@ A free English-language, mobile-first fitness PWA.
 ### Additional Apple Watch facts
 
 A dedicated watchOS UI (live set count, countdown, and completing a set on the watch) needs a native watchOS companion built with Xcode. Apple's free Personal Team allows limited on-device testing but provisioning profiles expire after 7 days; it does not provide an independently maintained no-cost public app deployment path.
+
+## GodFit v1.2: animated exercise guides
+- Each of the 16 existing exercises has a purpose-drawn, lightweight, looping SVG motion diagram. These are offline-friendly schematic animations, not GIF files or real-life form instruction.
+- The exercise detail view shows the animation, equipment label, and key movement guidance **above** the existing YouTube video search link.
+- The Plan view also shows a small animated preview for each exercise.
+- GIF-like SVG animations preserve sharpness and small download size on iPhone.
+- Diagrams approximate the movement and may not match gym equipment exactly. Follow machine instructions and real video demonstrations for technique.
